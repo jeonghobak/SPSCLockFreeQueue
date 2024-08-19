@@ -19,20 +19,20 @@ public:
 
 	bool Allocate( const size_t countofElement );
 
-	// @brief producer thread only used this function.
+	// @brief producer thread only use this function.
 	bool push( const T& data );
 
-	// @brief producer thread only used this function.
+	// @brief producer thread only use this function.
 	bool push( T&& data );
 
-	// @brief producer thread only used this function.
+	// @brief producer thread only use this function.
 	template<typename ...Args>
 	bool emplace_back( Args&& ...args );
 
-	// @brief consumer thread only used this function.
+	// @brief consumer thread only use this function.
 	int32_t front( const T* front_data ) const;
 
-	// @brief consumer thread only used this function.
+	// @brief consumer thread only use this function.
 	bool pop(T& rPopData);
 
 private:

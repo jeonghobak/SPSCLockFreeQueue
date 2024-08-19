@@ -6,7 +6,7 @@
 #include <limits>
 #include <algorithm>
 
-// Checkk performance of aligned_alloc and new operator
+// Check performance of aligned_alloc and new operator
 #define ALINGED_ALLOC_ON 0
 
 template<typename T>
